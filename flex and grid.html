@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  
+            grid-gap: 20px;  
+            padding: 100px;
+            background-color: black;
+            background-size: 0%;
+    
+        }
+
+         .grid-item {
+            display: flex;
+            justify-content: center; 
+            background-color: orange;
+            border: 4px dashed indigo;
+            padding: 20px;
+            height: 150px;
+            text-align: center;
+            flex-direction: column;  
+        }
+
+        .flex-item {
+            margin: 10px;
+            background-color: greenyellow;
+            padding: 10px;
+            border: 4px dashed pink;
+        }
+    </style>
+    <title>Flexbox and Grid Combined</title>
+</head>
+<body>
+    <div class="grid-container">
+        
+        <div class="grid-item">
+            <div class="flex-item">sneka</div>
+            <div class="flex-item">yogi</div>
+        </div>
+        <div class="grid-item">
+            <div class="flex-item">sangavi</div>
+            <div class="flex-item">anusha</div>
+        </div>
+        <div class="grid-item">
+            <div class="flex-item">jenifer</div>
+            <div class="flex-item">swetha</div>
+        </div>
+    </div>
+</body>
+</html>
